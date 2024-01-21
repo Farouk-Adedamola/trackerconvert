@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cell {
+    @apply font-bold text-black text-center;
+  }
+
+  .cell-map-items {
+    @apply font-bold text-green-700 text-sm capitalize border-r-2 border-green-500 text-center;
+  }
+
+  .cell-btn {
+    @apply text-white p-2 rounded-sm font-semibold;
+  }
+
+  .input {
+    @apply w-full sm:w-full outline-none px-2 py-1 rounded-sm text-black font-bold;
+  }
+
+  .label {
+    @apply text-white text-lg font-bold;
+  }
+
+  .sort-btn {
+    @apply text-sm font-bold rounded-[10px] py-3 px-2 bg-white;
+  }
+}
