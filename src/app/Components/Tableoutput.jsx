@@ -43,7 +43,7 @@ const Tableoutput = ({
               </TableRow>
             </TableHead>
             <TableBody>
-              {projects.map((project) => (
+              {projects?.map((project) => (
                 <TableRow
                   key={project.id}
                   className="border-b-2 border-solid border-green-700"

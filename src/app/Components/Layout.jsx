@@ -34,8 +34,9 @@ const Layout = () => {
   const [serialNumber, setSerialNumber] = useState(generateSerialNumber());
 
   function generateSerialNumber() {
-    const sN = projects.length + 1;
-    return sN;
+    const sN = projects?.length + 1;
+    // const sN = projects.length() + 1;
+    // return sN;
   }
 
   const handleChange = (e) => {
