@@ -6,11 +6,13 @@ import SortHelper from "./SortHelper";
 import { format } from "date-fns";
 
 const getLocalStorage = () => {
-  let projects = localStorage.getItem("projects");
-  if (projects) {
-    return JSON.parse(projects);
-  } else {
-    return [];
+  if (typeof window !== "undefined") {
+    let projects = localStorage.getItem("projects");
+    if (projects) {
+      return JSON.parse(projects);
+    } else {
+      return [];
+    }
   }
 };
 
